@@ -1,6 +1,6 @@
 <?php
 
-namespace Rixxi\Modular\DI\Extensions;
+namespace Rixxi\Modular\DI;
 
 use Nette;
 use Nette\Utils\Validators;

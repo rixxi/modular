@@ -16,9 +16,6 @@
 		"kdyby/events": "@dev",
 		"kdyby/translation": "@dev"
 	},
-	"require-dev": {
-		"rixxi/lint": "@dev"
-	},
 	"autoload": {
 		"psr-0": {
 			"Rixxi\\Modular\\": "src/"

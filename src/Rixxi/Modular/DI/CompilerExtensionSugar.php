@@ -55,7 +55,7 @@ trait CompilerExtensionSugar
 	{
 		$this->compiler->parseServices(
 			$this->getContainerBuilder(),
-			$this->loadFromFile(__DIR__ . '/config/' . $name . '.neon'),
+			$this->loadFromFile(dirname($this->getReflection()->getFileName()) . '/config/' . $name . '.neon'),
 			$this->prefix($name)
 		);
 	}

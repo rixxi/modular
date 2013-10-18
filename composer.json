@@ -12,9 +12,7 @@
 		"issues": "https://github.com/rixxi/user"
 	},
 	"require": {
-		"nette/nette": "@dev",
-		"kdyby/events": "@dev",
-		"kdyby/translation": "@dev"
+		"nette/nette": "@dev"
 	},
 	"autoload": {
 		"psr-0": {

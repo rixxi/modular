@@ -7,10 +7,10 @@ interface IRouterProvider
 {
 
 	/**
-	 * Returns array of ServiceDefinition,
+	 * Returns array of service names,
 	 * that will be appended to setup of router service
 	 * @return array[]
 	 */
-	public function getRouterDefinitions();
+	public function getRouters();
 
 }

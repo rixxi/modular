@@ -24,8 +24,8 @@ class ModularExtension extends Nette\DI\CompilerExtension
 			}
 
 			if ($extension instanceof IRouterProvider) {
-				foreach ($extension->getRouterDefinitions() as $constructor => $parameters) {
-					$router->addSetup('$service[] = ' . $constructor, $parameters);
+				foreach ($extension->getRouters() as $service) {
+					$router->addSetup('offsetSet', array(NULL, $service));
 				}
 			}
 		}

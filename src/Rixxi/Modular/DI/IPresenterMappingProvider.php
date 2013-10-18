@@ -11,6 +11,6 @@ interface IPresenterMappingProvider
 	 * @see https://github.com/nette/nette/blob/master/Nette/Application/PresenterFactory.php#L138
 	 * @return array
 	 */
-	function getPresenterMapping();
+	public function getPresenterMapping();
 
 }

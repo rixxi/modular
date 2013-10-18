@@ -11,6 +11,6 @@ interface ITracyPanelsProvider
 	 * @see http://doc.nette.org/cs/configuring#toc-debugger
 	 * @return array
 	 */
-	function getTracyPanels();
+	public function getTracyPanels();
 
 }

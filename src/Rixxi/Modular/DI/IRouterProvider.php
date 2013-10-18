@@ -11,6 +11,6 @@ interface IRouterProvider
 	 * that will be appended to setup of router service
 	 * @return array[]
 	 */
-	function getRouterDefinitions();
+	public function getRouterDefinitions();
 
 }

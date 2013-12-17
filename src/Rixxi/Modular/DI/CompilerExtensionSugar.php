@@ -19,10 +19,8 @@ trait CompilerExtensionSugar
 	 */
 	private function getCompilerExtension($interfaceOrClass)
 	{
-		foreach ($this->compiler->getExtensions() as $extension) {
-			if ($extension instanceof $interfaceOrClass) {
-				return $extension;
-			}
+		if ($extensions = $this->compiler->getExtensions($interfaceOrClass)) {
+			return reset($extensions);
 		}
 
 		throw new Nette\Utils\AssertionException("Please register the required $interfaceOrClass to Compiler.");
@@ -30,18 +28,14 @@ trait CompilerExtensionSugar
 
 
 	/**
+	 * @deprecated
 	 * @param string $interfaceOrClass
 	 * @return Nette\DI\CompilerExtension[]
 	 */
 	private function getCompilerExtensions($interfaceOrClass)
 	{
-		$extensions = [];
-		foreach ($this->compiler->getExtensions() as $extension) {
-			if ($extension instanceof $interfaceOrClass) {
-				$extensions[] = $extension;
-			}
-		}
-		return $extensions;
+		trigger_error('getCompilerExtensions($interfaceOrClass) is deprecated call $this->compiler->getExtensions($type) instead.', E_USER_DEPRECATED);
+		return $this->compiler->getExtensions($interfaceOrClass);
 	}
 
 

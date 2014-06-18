@@ -9,7 +9,7 @@
 	],
 	"support": {
 		"email": "mishak+rixxi@mishak.net",
-		"issues": "https://github.com/rixxi/user"
+		"issues": "https://github.com/rixxi/modular"
 	},
 	"require": {
 		"nette/nette": "@dev"

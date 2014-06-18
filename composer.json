@@ -12,7 +12,7 @@
 		"issues": "https://github.com/rixxi/modular"
 	},
 	"require": {
-		"nette/nette": "@dev"
+		"nette/nette": "~2.1"
 	},
 	"autoload": {
 		"psr-0": {
